@@ -1,0 +1,9 @@
+[Unit]
+Description=Shellimin Servisi
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/shellscript.sh
+
+[Install]
+WantedBy=multi-user.target
