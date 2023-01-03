@@ -1,9 +1,0 @@
-[Unit]
-Description=Shellimin Servisi
-
-[Service]
-Type=simple
-ExecStart=/home/wilfried/bsm/test/shellscript.sh
-
-[Install]
-WantedBy=multi-user.target
