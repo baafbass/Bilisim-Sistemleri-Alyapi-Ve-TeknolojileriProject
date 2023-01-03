@@ -1,5 +1,8 @@
 #!/bin/bash
 
+while true
+
+do
 
 dir="/home/wilfried/bsm/test"
 
@@ -19,6 +22,9 @@ psql -h "localhost" -U "postgres" -d "fardb" <<EOF
   INSERT INTO fini  (date, filename,deletion_date) VALUES (now(),'$file',now())
 EOF
 fi
-
 done
 
+
+  sleep 10
+
+done
